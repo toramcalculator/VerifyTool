@@ -121,8 +121,7 @@ namespace VerifyTool
 
         private void Copy(object sender, RoutedEventArgs e)
         {
-            Clipboard.SetText(ResultWindow.Text);
-            MessageBox.Show("내용이 클립보드에 복사되었습니다!");
+            ResultWindow.Text = "{\n\"name\":\"\"\n\"option\":\"\"\n}";
         }
 
         private void Git_Commit(object sender, RoutedEventArgs e)
@@ -179,7 +178,7 @@ namespace VerifyTool
                 webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
                 webDriver.FindElement(By.XPath("//*[@id=\"login_field\"]")).SendKeys("toramcalculator");
                 webDriver.FindElement(By.XPath("//*[@id=\"password\"]")).SendKeys("3669jwok");
-                webDriver.FindElement(By.XPath("//*[@id=\"login\"]/div[4]/form/div/input[11]")).Click();
+                webDriver.FindElement(By.XPath("//*[@id=\"login\"]/div[4]/form/div/input[12]")).Click();
                 using (HttpClient client = new())
                 {
                     File.Create(CrystaPath).Close();

@@ -47,7 +47,7 @@
         </ComboBox>
         <TextBox Name="OptionValue" HorizontalAlignment="Left" Height="24" Margin="157,202,0,0" VerticalAlignment="Top" Width="140"/>
         <TextBox Name="ResultWindow" IsReadOnly="True" Background="AliceBlue" HorizontalAlignment="Left" Height="146" Margin="354,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279"/>
-        <Button Content="Copy" Click="Copy" HorizontalAlignment="Left" Height="36" Margin="710,56,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button Content="초기화" Click="Copy" HorizontalAlignment="Left" Height="36" Margin="710,56,0,0" VerticalAlignment="Top" Width="80"/>
         <Button Content="Git Commit" Click="Git_Commit" HorizontalAlignment="Left" Height="30" Margin="410,243,0,0" VerticalAlignment="Top" Width="167"/>
         <TextBox Text="신규 크리스타()" Name="CommitMessage" TextAlignment="Center" HorizontalAlignment="Left" Height="22" Margin="410,278,0,0" VerticalAlignment="Top" Width="167"/>
     </Grid>
